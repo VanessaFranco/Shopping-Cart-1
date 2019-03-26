@@ -1,0 +1,42 @@
+body{
+background-color:lightblue;
+}
+
+.cart {
+    background-color: white;
+    color:blue;
+}
+
+.table-head,
+.item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.order,
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.add {
+    font-size:15px;
+    color: blue;
+}
+
+.check {
+    font-size:15px;
+    color: blue;
+}
+
+.itemName{
+    font-size:15px;
+}
+
+.itemPrice{
+    font-size:15px;
+}
+
+p{
+    font-size:18px;
+}
