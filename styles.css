@@ -1,16 +1,22 @@
-body{
-background-color:lightblue;
+body {
+    background-color: lightblue;
 }
 
 .cart {
     background-color: white;
-    color:blue;
+    color: blue;
 }
+
+.cart-details {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .table-head,
 .item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .order,
@@ -20,23 +26,32 @@ h1 {
 }
 
 .add {
-    font-size:15px;
+    font-size: 15px;
     color: blue;
 }
 
 .check {
-    font-size:15px;
+    font-size: 15px;
     color: blue;
 }
 
-.itemName{
-    font-size:15px;
+.itemName {
+    font-size: 15px;
 }
 
-.itemPrice{
-    font-size:15px;
+.itemPrice {
+    font-size: 15px;
 }
 
-p{
-    font-size:18px;
+.itemImg {
+    font-size: 15px;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
 }
