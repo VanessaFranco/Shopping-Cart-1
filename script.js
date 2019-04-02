@@ -3,8 +3,11 @@ var prices = [];
 
 $(".add").click(function() {
     var name = $(".itemName").val();
+    $(".itemName").val("");
     var price = parseInt($(".itemPrice").val());
-
+    $(".itemPrice").val("");
+    var url = ($(".itemImg").val());
+    $(".itemImg").val("");
     items.push(name);
     prices.push(price);
 
@@ -19,6 +22,7 @@ $(".add").click(function() {
     $(".cart").append("<div class='item'>" +
         "<p>" + name + "</p>" +
         "<p>" + price + "</p>" +
+        "<img src = '" + url + "'>" +
         "</div>");
 
 });
