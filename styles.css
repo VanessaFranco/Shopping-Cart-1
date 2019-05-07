@@ -1,5 +1,7 @@
 body {
-    background-color: lightblue;
+    background-image: url(https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8605&w=600&h=600);
+    background-size:cover;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .cart {
@@ -22,17 +24,18 @@ body {
 .order,
 h1 {
     text-align: center;
-    color: blue;
+    color: white;
+    text-shadow:0 0 3px black;
 }
 
-.add {
+button {
     font-size: 15px;
     color: blue;
-}
-
-.check {
-    font-size: 15px;
-    color: blue;
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 100%;
+    width:100px;
+    height:100px;
 }
 
 .itemName {
@@ -48,7 +51,8 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
 }
 
 img {
