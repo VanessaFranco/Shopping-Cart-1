@@ -1,5 +1,8 @@
 var items = [];
 var prices = [];
+$(".cake").hide();
+
+
 
 $(".add").click(function() {
     var name = $(".itemName").val();
@@ -7,6 +10,9 @@ $(".add").click(function() {
     var price = parseInt($(".itemPrice").val());
     $(".itemPrice").val("");
     var url = ($(".itemImg").val());
+    if (url === "") {
+url="https://cdn5.vectorstock.com/i/1000x1000/86/64/two-layered-birthday-cake-icon-with-cherry-on-top-vector-17218664.jpg";
+    }
     $(".itemImg").val("");
     items.push(name);
     prices.push(price);
