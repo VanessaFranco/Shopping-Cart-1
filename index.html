@@ -1,4 +1,5 @@
 <!DOCTYPE html> <html><head>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Cuprum" rel="stylesheet">
         <title>Shopping Cart</title>
     <script>function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -4027,7 +4028,9 @@
     return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r;
   }, b || (a.jQuery = a.$ = r), r;
 });</script><style>body {
-    background-color: lightblue;
+    background-image: url(https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8605&w=600&h=600);
+    background-size:cover;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .cart {
@@ -4050,17 +4053,18 @@
 .order,
 h1 {
     text-align: center;
-    color: blue;
+    color: white;
+    text-shadow:0 0 3px black;
 }
 
-.add {
+button {
     font-size: 15px;
     color: blue;
-}
-
-.check {
-    font-size: 15px;
-    color: blue;
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 100%;
+    width:100px;
+    height:100px;
 }
 
 .itemName {
@@ -4076,7 +4080,8 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
 }
 
 img {
@@ -4108,14 +4113,17 @@ img {
 
                 <p>Number of items in cart: <span class="items-in-cart">0</span></p>
                 <p>Total price: <span class="total">0</span></p>
-
             </div>
+            <img class="cake" src="https://cdn5.vectorstock.com/i/1000x1000/86/64/two-layered-birthday-cake-icon-with-cherry-on-top-vector-17218664.jpg">
         </div>
     
 <script>
 /*__POPCODESTART__*/
 var items = [];
 var prices = [];
+$(".cake").hide();
+
+
 
 $(".add").click(function() {
     var name = $(".itemName").val();
@@ -4123,6 +4131,9 @@ $(".add").click(function() {
     var price = parseInt($(".itemPrice").val());
     $(".itemPrice").val("");
     var url = ($(".itemImg").val());
+    if (url === "") {
+url="https://cdn5.vectorstock.com/i/1000x1000/86/64/two-layered-birthday-cake-icon-with-cherry-on-top-vector-17218664.jpg";
+    }
     $(".itemImg").val("");
     items.push(name);
     prices.push(price);
